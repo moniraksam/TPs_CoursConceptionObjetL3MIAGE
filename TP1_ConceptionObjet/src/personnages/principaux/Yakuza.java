@@ -35,6 +35,17 @@ public class Yakuza extends Humain {
     }
 
 
+
+    //Overrided Methods
+    @Override 
+    public void direBonjour(){
+        super.direBonjour();
+        String texte = "Je suis du clan " + this.clan + "\n";
+        parler(texte);
+    }
+
+
+
     //Getters
     public String getClan(){
         return this.clan;

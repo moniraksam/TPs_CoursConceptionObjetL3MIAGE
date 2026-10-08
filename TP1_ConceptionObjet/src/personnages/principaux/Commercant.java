@@ -25,4 +25,5 @@ public class Commercant extends Humain {
         gagnerArgent(n);
     }
 
+
 }
