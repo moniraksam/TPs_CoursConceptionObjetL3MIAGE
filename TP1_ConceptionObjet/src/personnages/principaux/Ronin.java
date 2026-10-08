@@ -15,8 +15,8 @@ public class Ronin extends Humain {
 
     //Methodes
     public void donner(int n, Commercant c){
-        if (n > 0){
-            parler("Recoit mon argent, cher commercant " + c.getNom());
+        if (n > 0){ 
+            parler("Recoit mon argent, une somme de " + n + ", cher commercant " + c.getNom());
             perdreArgent(n);
             c.parler("Merci beaucoup cher Ronin " + this.getNom() + " , pour la somme de " + n);
             c.gagnerArgent(n);
