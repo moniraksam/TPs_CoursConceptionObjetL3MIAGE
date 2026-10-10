@@ -30,7 +30,10 @@ class Monhistoire {
         // ronin.direBonjour();
 
         Traitre T = new Traitre("balls", "nomi",5000, "zhao xina");
-
+        T.faireLeGentil(c, 600);
+        c.direBonjour();
+        T.faireLeGentil(T, 100);
+        T.direBonjour();
 
     }
 }

@@ -1,7 +1,8 @@
 package src.personnage.secondaires;
 
 import src.personnages.principaux.Samourai;
-import src.personnages.principaux.Commercant;
+import src.personnages.principaux.*;
+import src.personnages.*;
 
 public class Traitre extends Samourai {
     private int niveauTraitrise = 0;
@@ -29,5 +30,23 @@ public class Traitre extends Samourai {
             this.niveauTraitrise++;
         }
     }
+
+    public void faireLeGentil(Humain h, int don){
+        if (this.getArgent() > don && h != this){
+            parler("Je fais le gentil en faisaint un don de " + don +" pour " + h.getNom() );
+            h.parler("Merci pour le don " + this.getNom());
+            h.gagnerArgent(don);
+            this.perdreArgent(don);
+            if (this.niveauTraitrise > 0){
+                this.niveauTraitrise--;
+            }
+        } else if (this.getArgent() < don) {
+            parler("Je veux faire un don mais j'ai moins de " + don + " sous");
+        } else if (h == this){
+            parler("Je ne peut pas faire un don a moi meme!!");
+        }
+    }
+
+
 
 }
