@@ -2,7 +2,7 @@ package src.histoires;
 
 import src.personnages.Humain;
 import src.personnages.principaux.*;
-import src.personnage.secondaires.*;
+import src.personnages.secondaires.*;
 
 class Monhistoire {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ class Monhistoire {
         // Commercant commercant = new Commercant("Marchand", 35);
         // commercant.direBonjour();
         // Yakuza yakusa = new Yakuza("Yaku␣le␣noir", 42,
-        //         "biere", "WarSong");
+        // "biere", "WarSong");
         // yakusa.direBonjour();
         // yakusa.extorquer(commercant);
         // Ronin ronin = new Ronin("Roro", 61, "sake");
@@ -29,11 +29,11 @@ class Monhistoire {
         // ronin.provoquer(yakusa);
         // ronin.direBonjour();
 
-        Traitre T = new Traitre("balls", "nomi",5000, "zhao xina");
-        T.faireLeGentil(c, 600);
-        c.direBonjour();
-        T.faireLeGentil(T, 100);
-        T.direBonjour();
+        Traitre T = new Traitre("balls", "nomi", 5000, "zhao xina");
 
+        Grandmere G = new Grandmere("baba yaga", 500, "the");
+        G.faireConnaissanceAvecHumain(c);
+        G.faireConnaissanceAvecHumain(T);
+        G.ragouter();
     }
 }

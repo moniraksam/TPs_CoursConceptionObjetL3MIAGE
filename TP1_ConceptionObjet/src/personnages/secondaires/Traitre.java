@@ -1,4 +1,4 @@
-package src.personnage.secondaires;
+package src.personnages.secondaires;
 
 import src.personnages.principaux.Samourai;
 import src.personnages.principaux.*;
