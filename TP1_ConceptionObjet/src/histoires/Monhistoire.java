@@ -32,8 +32,10 @@ class Monhistoire {
         Traitre T = new Traitre("balls", "nomi", 5000, "zhao xina");
 
         Grandmere G = new Grandmere("baba yaga", 500, "the");
-        G.faireConnaissanceAvecHumain(c);
-        G.faireConnaissanceAvecHumain(T);
-        G.ragouter();
+        // G.faireConnaissanceAvecHumain(c);
+        // G.faireConnaissanceAvecHumain(T);
+        // G.ragouter();
+        Ninja N = new Ninja("Yozo", 0, "tang posion");
+        N.direBonjour();
     }
 }

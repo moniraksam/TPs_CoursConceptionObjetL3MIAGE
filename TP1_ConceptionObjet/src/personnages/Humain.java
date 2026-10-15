@@ -1,6 +1,6 @@
 package src.personnages;
 
-public class Humain {
+public abstract class Humain {
     private String nom;
     private int argent;
     private String boisson;
