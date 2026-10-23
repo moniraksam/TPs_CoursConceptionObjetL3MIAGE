@@ -7,8 +7,8 @@ public class PokemonEau extends Pokemon {
 
     @Override
     public void attaquer(Pokemon p) {
-        if (p != null) {
-            log("J'attaque " + p.getNom());
+        if (p != null && p != this) {
+            log("J'attaque " + p.getNom() + ": " + this.getType() + "  vs " + p.getType() + "\n");
             p.subir(this);
         }
 
@@ -29,13 +29,16 @@ public class PokemonEau extends Pokemon {
         int degats = p.getAtk();
 
         if (p.getType() == TypePokemon.Type.FEU) {
-            log("C'est tres efficace!");
+            log("C'est tres efficace!\n");
             degats *= 2;
         } else {
-            log("Ce n'est pas tres efficace...");
+            log("Ce n'est pas tres efficace...\n");
         }
 
         this.hp = Math.max(0, this.hp - degats);
+        if (this.isKO()){
+            log("Je suis KO!\n");
+        }
     }
 
 }
