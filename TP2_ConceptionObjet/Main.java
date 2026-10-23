@@ -6,9 +6,6 @@ public class Main {
         System.out.println(P);
         System.out.println(P1);
 
-        P.attaquer(P1);
-
-        System.out.println(P1);
 
     }
 }
