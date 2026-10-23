@@ -28,7 +28,7 @@ public class PokemonFeu extends Pokemon {
 
         int degats = p.getAtk();
 
-        if (p.getType() == TypePokemon.Type.EAU) {
+        if (p.getType() == TypePokemon.Type.PLANTE) {
             log("C'est tres efficace!");
             degats *= 2;
         } else {
