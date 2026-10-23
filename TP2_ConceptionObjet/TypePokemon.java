@@ -3,11 +3,9 @@ public class TypePokemon {
         EAU,
         FEU,
         PLANTE;
-
     }
 
-
     public static void main(String[] args) {
-                       
+                    
     }
 }

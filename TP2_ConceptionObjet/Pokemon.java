@@ -33,12 +33,20 @@ public abstract class Pokemon {
     }
 
     // Abstract methodes
+    /***
+     * 
+     * @param p The attacked one
+     */
     public abstract void attaquer(Pokemon p);
 
+    /***
+     * 
+     * @param p The attacker
+     */
     public abstract void subir(Pokemon p);
 
     public void log(String msg) {
-        System.out.print("[Pokemon " + this.nom + "] : ");
+        System.out.print("[Pokemon " + this.nom + "] : " + msg);
     }
 
     // Getters
@@ -65,8 +73,8 @@ public abstract class Pokemon {
     // Redefinitions
     @Override
     public String toString() {
-        log(nom);
-        return String.format(this.nom + "\n\t" + "Niveau : " + this.niveau +
-                "\n\t" + "Type :" + this.type + "\n\t" + "HP : " + this.hp + "\n\t" + "Attack Degat : " + this.atk + "\n");
+        log("Je m'appelle " + this.nom);
+        return String.format("\n\t" + "Niveau : " + this.niveau +
+                "\n\t" + "Type : " + this.type + "\n\t" + "HP : " + this.hp + "\n\t" + "Attack Degat : " + this.atk + "\n");
     }
 }
