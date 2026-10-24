@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    private static void testPokemonTypes() {
         PokemonEau pe = new PokemonEau("Pokeau");
         PokemonFeu pf = new PokemonFeu("Pokefeu");
         System.out.println(pe);
@@ -11,5 +11,9 @@ public class Main {
 
         System.out.println(pe);
         System.out.println(pf);
+    }
+
+    public static void main(String[] args) {
+        testPokemonTypes();
     }
 }
